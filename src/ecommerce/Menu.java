@@ -2,11 +2,14 @@ package ecommerce;
 
 import java.util.Scanner;
 
+import ecommerce.model.Produto;
+import ecommerce.model.Corretivo;
+import ecommerce.model.Base;
+
 public class Menu {
+
 	public static void main(String[] args) {
-
-		Scanner leia = new Scanner(System.in);
-
+		
 		int opcao;
 
 		while (true) {
@@ -29,7 +32,7 @@ public class Menu {
 
 			opcao = leia.nextInt();
 
-			if (opcao == 9) {
+			if (opcao == 6) {
 				System.out.println("\nDescubra o poder da sua beleza com Magic Beauty!");
                  leia.close();
 				System.exit(0);
@@ -45,7 +48,7 @@ public class Menu {
 
 					break;
 				case 3:
-					System.out.println("Buscar produto por número\n\n");
+					System.out.println("Buscar produto porID\n\n");
 
 					break;
 				case 4:
